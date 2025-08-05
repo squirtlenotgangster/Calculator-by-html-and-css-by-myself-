@@ -1,0 +1,64 @@
+.navbar{
+    height:50px;
+    background-color: pink;
+    
+}
+.nav-items{
+    display:flex;
+    justify-content:end;
+    align-items: center;
+}
+.icon{
+    margin: 15px;
+    font-size: 2.0rem;
+}
+.cal{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: purple;
+    font-size: 50px;
+    text-decoration: underline;
+    text-align: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+   
+}
+   
+.evaluate{
+    height: 400px;
+    width:600px;
+    background-color: rgb(185, 126, 159);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.7rem;
+     border-radius: 20px;
+}
+
+.inp{
+    font-size: 1.7rem;
+    border-radius: 15px;
+    margin: 10px;
+}
+.res{
+    height:100px;
+    width:600px;
+    margin: 20px;
+    font-size: 1.7rem;
+    background-color: rgb(142, 107, 137);
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     border-radius: 20px;
+}
+.end{
+    height:50px;
+    background-color: rgb(124, 78, 122);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+}
