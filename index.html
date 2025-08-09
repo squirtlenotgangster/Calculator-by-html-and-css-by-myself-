@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SI & CI Calculator</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interest Calculator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="nav-items">
-            <i class="fa-solid fa-house icon"></i>
-            <i class="fa-solid fa-circle-user icon"></i>
-            <i class="fa-solid fa-bars icon"></i>
-            </div>
-        </div>
-    </header>
-
-    <h1 class="cal">Calculator</h1>
-
-
-<div class="main">
- <div class="evaluate">
-        <div class="select-opt">
-            <label for="select">Select:</label>
-            <select class="inp">
-            <option value="Simple Interest">Simple Interest</option>
-            <option value="Compound Interest">Compound Interest</option>
-            </select>
-        </div>
-        <div class="inp-prn">
-              <label for="principle">Principle:</label>
-            <input class="inp" type="number" placeholder="Eg. 5000">
-        </div>
-        <div class="inp-rate">
-              <label for="rate">Rate:</label>
-            <input class="inp" type="number" placeholder="Eg. 5">
-        </div>
-        <div class="inp-time">
-              <label for="time">Time:</label>
-            <input class="inp" type="number" placeholder="Eg. 5">
-        </div>
+  <header>
+    <div class="navbar">
+      <div class="nav-items">
+        <i class="fa-solid fa-house icon"></i>
+        <i class="fa-solid fa-circle-user icon"></i>
+        <i class="fa-solid fa-bars icon"></i>
+      </div>
     </div>
+  </header>
+
+  <h1 class="cal">Interest Calculator</h1>
+
+  <div class="calculator">
+    <div class="card">
+      <label for="type">Select Type:</label>
+      <select id="type">
+        <option value="Simple">Simple Interest</option>
+        <option value="Compound">Compound Interest</option>
+      </select>
+
+      <label for="principal">Principal (₹):</label>
+      <input type="number" id="principal" placeholder="Eg. 5000" />
+
+      <label for="rate">Rate (% per year):</label>
+      <input type="number" id="rate" placeholder="Eg. 5" />
+
+      <label for="time">Time (years):</label>
+      <input type="number" id="time" placeholder="Eg. 2" />
+
+      <div id="compound-fields">
+        <label for="frequency">Compound Frequency:</label>
+        <select id="frequency">
+          <option value="1">Yearly</option>
+          <option value="2">Half-Yearly</option>
+          <option value="4">Quarterly</option>
+          <option value="12">Monthly</option>
+        </select>
+      </div>
+
+      <button onclick="calculate()">Calculate</button>
     </div>
+  </div>
 
-    <div class="result main">
-        <p class="res">Results</p>
+  <div class="result" id="result-box">
+    Result will appear here.
+  </div>
+
+  <footer>
+    <div class="end">
+      <p>Contact us</p>
+      <p>8761239163</p>
+      <p>soumayanchatterjee2_@gmail.com</p>
     </div>
+  </footer>
 
-    <footer>
-        <div class="end">
-            <p>Contact us </p>
-            <p>8761239163</p>
-            <p>gfdegsafdjkgsfdk_@gmail.com</p>
-        </div>
-    </footer>
-
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
